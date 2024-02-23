@@ -1,0 +1,43 @@
+1 Seite:
+	81 * 40 = 3240 Zeichen
+
+1 Buch:
+	81 Seiten
+	10cm * 10cm * 1cm
+
+1 Regal:
+	27 * 243 = 81**2 = 6561 Bücher = 81**3 Seiten
+	(27 * 0.1m) * 0.1m * (243 * 0.1m) = 2.7m * 0.1m * 24.3m
+
+1 Raum:
+	81 Regale = 81**4 Seiten
+	2.7m * (0.1m * 81 + 0.5m * 41) * 24.3m = 2.7m * 28.6m * 24.3m
+
+1 Etage:
+	81 Räume = 81**5 Seiten
+	2.7m * (9 * 28.6m) * (9 * 24.3m) = 2.7m * 257.4m * 218.7m
+
+1 Gebäude:
+	81 Etagen = 81**6 Seiten
+	(81 * 2.7m) * 257.4m * 218.7m = 218.7m * 257.4m * 218.7m
+	Grundfläche = 56293.38m**2 = ca. 0.06km**2
+
+1 Planet:
+	81**6 Gebäude = 81**12 Seiten
+	Radius r:
+		pi * r**2 = 81**6 * 0.06km**2
+		r = 0.06km * sqrt(81**6 / pi) = 0.06km * 81**3 / sqrt(pi)
+		r = 18000km = 3 * r_Erde
+
+1 Sternsystem:
+	81 Planeten = 81**13 Seiten
+
+1 Galaxie:
+	81**6 Sterne = 81**19 Seiten
+
+1 Bibliothek:
+	81**3221 Galaxien = 81**3240 Seiten
+
+[...., 7, 1, 6, 1, 1, 1, 1, 2, 1]
+[3221, 6, 1, 6, 1, 1, 1, 2, 1]
+[Glxy, s, p, g, e, R, r, b, s]

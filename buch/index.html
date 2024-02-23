@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erkunden &mdash; Babylonier Bibliothek</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../script.js" defer></script>
+    <script src="../tables.js" defer></script>
+    <script src="buch.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <a id="heading" href="../index.html">Babylonier Bibliothek</a>
+      <section id="path">
+        <a id="galaxy-path" class="hidden">Galaxie</a>
+        <a id="star-path" class="hidden">Stern</a>
+        <a id="planet-path" class="hidden">Planet</a>
+        <a id="building-path" class="hidden">Geb&auml;ude</a>
+        <a id="floor-path" class="hidden">Etage</a>
+        <a id="hallway-path" class="hidden">Gang</a>
+        <a id="room-path" class="hidden">Raum</a>
+        <a id="shelf-path" class="hidden">Regal</a>
+        <a id="book-path" class="hidden">Buch</a>
+      </section>
+      <section id="path-inputs">
+        <section id="galaxy-input-container" class="hidden">
+          <span>Name der Galaxie</span>
+          <button class="random">Zuf&auml;llig</button>
+          <textarea
+            spellcheck="false"
+            name="galaxy-name"
+            id="galaxy-name"
+            cols="81"
+            rows="40"
+          ></textarea>
+          <button class="next">Weiter >></button>
+          <div class="background"></div>
+        </section>
+        <section id="star-input-container" class="hidden">
+          <span>Name des Sternsystems</span>
+          <button class="random">Zuf&auml;llig</button>
+          <div id="star-input" class="input-group">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <button class="next">Weiter >></button>
+          <div class="background"></div>
+        </section>
+        <section id="planet-input-container" class="hidden">
+          <span>Planet Nr. (00~80)</span>
+          <button class="random">Zuf&auml;llig</button>
+          <div id="planet-input" class="input-group">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <button class="next">Weiter >></button>
+          <div class="background"></div>
+        </section>
+        <section id="building-input-container" class="hidden">
+          <span>Name des Geb&auml;udes</span>
+          <button class="random">Zuf&auml;llig</button>
+          <div id="building-input" class="input-group">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <button class="next">Weiter >></button>
+          <div class="background"></div>
+        </section>
+        <section id="floor-input-container" class="hidden">
+          <span>Etage Nr. (00~80)</span>
+          <button class="random">Zuf&auml;llig</button>
+          <div id="floor-input" class="input-group">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <button class="next">Weiter >></button>
+          <div class="background"></div>
+        </section>
+        <section id="room-input-container" class="hidden">
+          <span>Raum Nr. (00~80)</span>
+          <button class="random">Zuf&auml;llig</button>
+          <div id="room-input" class="input-group">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <button class="next">Weiter >></button>
+          <div class="background"></div>
+        </section>
+        <section id="shelf-input-container" class="hidden">
+          <span>Regal Nr. (00~80)</span>
+          <button class="random">Zuf&auml;llig</button>
+          <div id="shelf-input" class="input-group">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <button class="next">Weiter >></button>
+          <div class="background"></div>
+        </section>
+        <section id="book-input-container" class="hidden">
+          <span>Buch Nr. (0000~6560)</span>
+          <button class="random">Zuf&auml;llig</button>
+          <div id="book-input" class="input-group">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <button class="next">Weiter >></button>
+          <div class="background"></div>
+        </section>
+        <section id="page-input-container" class="hidden">
+          <span>Seite</span>
+          <input
+            type="text"
+            name="page-input"
+            id="page-input"
+            maxlength="2"
+            min="-1"
+            max="80"
+          />
+        </section>
+      </section>
+      <section id="content-container" class="hidden">
+        <div id="cover" class="hidden">
+          <h2>Sie lesen das folgende Buch:</h2>
+          <p></p>
+        </div>
+        <div id="content"></div>
+        <div id="book-background"></div>
+      </section>
+      <section id="navigate" class="hidden">
+        <a id="to-cover">&lt;&lt; Zur Titelseite</a>
+        <a id="to-prev">&lt; vorherige Seite</a>
+        <a id="to-next">n&auml;chste Seite &gt;</a>
+        <a id="to-end">Zum Ende springen &gt;&gt;</a>
+      </section>
+    </div>
+  </body>
+</html>

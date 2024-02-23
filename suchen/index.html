@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suchen &mdash; Babylonier Bibliothek</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../script.js" defer></script>
+    <script src="../tables.js" defer></script>
+    <script src="suchen.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <a id="heading" href="../index.html">Babylonier Bibliothek</a>
+      <section id="search-container">
+        <div>
+          <p>Suchen nach Seite mit folgendem Inhalt:</p>
+          <button>Suchen</button>
+        </div>
+        <textarea spellcheck="false" name="search" id="search" cols="81" rows="40"></textarea>
+      </section>
+      <section id="results-container" class="hidden">
+        <h2>Ergebnisse:</h2>
+        <div id="exact">
+          <h3>Exakter Treffer:</h3>
+        </div>
+        <div id="other">
+          <h3>Sonstige Treffer:</h3>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
